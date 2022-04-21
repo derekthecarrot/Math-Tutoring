@@ -1,45 +1,53 @@
-/*reset.css*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Roboto+Slab:wght@300;400&display=swap');
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+
+:root {
+  --darknavy: #0C0032;
+  --navy: #190061;
+  --lightnavy: #240090;
+  --blue: #3500D3;
+  --darkgrey: #282828;
+  --white: #ffffff;
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+
+html {
+  background-color: var(--darknavy);
+  color: var(--white);
 }
-body {
-	line-height: 1;
+.app {
+  margin: 20% auto;
+  width: fit-content;
+  height: fit-content;
 }
-ol, ul {
-	list-style: none;
+
+.header {
+  font-family: Montserrat;
 }
-blockquote, q {
-	quotes: none;
+
+.mathQuestions {
+  display: flex;
+  margin: auto;
+
+
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+.questionNumbers {
+  font-family: Montserrat;
+  padding: 1rem;
 }
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+
+.inputBox {
+  border-radius: 1rem;
+  margin: 1rem;
+
+}
+
+.submitDiv {
+  display: flex;
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 3rem;
+}
+
+.submitAnswer {
+  border-radius: 1rem;
 }
