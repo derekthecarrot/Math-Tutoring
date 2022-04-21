@@ -51,3 +51,7 @@ html {
 .submitAnswer {
   border-radius: 1rem;
 }
+
+.scoreheader {
+  font-family: Montserrat;
+}

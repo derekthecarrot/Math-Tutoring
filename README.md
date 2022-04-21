@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+# Math-Tutoring
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
 
-## Available Scripts
+Hello - this is my application for math practice. The purpose is to assist grade schoolers in practicing their addition skills. It uses the React Framework in order to store questions, results, score, and conditional render the results. You can track a running score, and answer as many questions as you'd like to practice you're adding skills!
 
-In the project directory, you can run:
 
-### `npm start`
+Table of Contents
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* [Installation](#installation)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* [Usage](#usage)
 
-### `npm test`
+* [Roadmap](#roadmap)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* [Contributions](#contributions)
 
-### `npm run build`
+* [License](#license)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Install Math-Tutoring with npm
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+git clone git@github.com:derekthecarrot/Math-Tutoring.git
+npm install # or yarn install
+npm start  
 
-### `npm run eject`
+Your app should be running on http://localhost:3000 or whichever PORT number you specify.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Usage
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+In order to use this application, you will need to have Visual Studio Code, Node.js, and Git Bash installed. After that - you can clone the repository and run an npm install, and then an npm start to start the application.
 
-## Learn More
+After installing the application, you may start answering addition questions to your hearts desire!
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Roadmap
 
-### Code Splitting
+ - Add unit testing, Would look to implement unit testing using Jest.js
+ - Generating more complex mathematical expressions, Could likely generate more complex math questions using math.js package as it seems to be able to handle much more advanced expressions
+ - Maintain a history of questions, History of questions based on a state that pushes a component list based on last question
+ - Keep a running total score, Total score implemented by using state and setting count
+ - Give multiple questions at once, Would likely need to use props to give each question a seperate unique property in order for questions to be submitted seperately
+ - Utilize a timer, Can use a state and a set a timer function, and once timer function hits 0, set score to 0 and generate new question again.
+ - Limit the number of incorrect answers, Can use a state for once a number of incorrect answers are reached, reset score to 0 to restart game, and if timer was implemented then reset timer as well.
+ - Brand the application, Create a logo, market it to user's it was created for (grade schoolers)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Contributions
 
-### Analyzing the Bundle Size
+How can you contribute to this project/repository? You can fork the repository and build upon it, or you can submit some changes to be made/requested on the issues tab!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## License
 
-### Making a Progressive Web App
+[MIT](https://choosealicense.com/licenses/mit/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

@@ -50,7 +50,7 @@ function AddMath() {
 
     return (
         <React.Fragment>
-            <div><h1>{score}</h1></div>
+            <div><h1 className='scoreheader'>Score: {score}</h1></div>
             {answer == addedIntegers ? (
                 <>
                     <div className='mathQuestions'>
