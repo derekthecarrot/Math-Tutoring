@@ -22,6 +22,7 @@ html {
 
 .header {
   font-family: Montserrat;
+  font-size: 40px;
 }
 
 .mathQuestions {
@@ -54,4 +55,14 @@ html {
 
 .scoreheader {
   font-family: Montserrat;
+}
+
+.tryagain {
+  font-family: Montserrat;
+  color: red;
+}
+
+.goodjob {
+  font-family: Montserrat;
+  color: green;
 }

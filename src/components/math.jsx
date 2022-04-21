@@ -10,6 +10,7 @@ function AddMath() {
     const [answer, setAnswer] = useState('')
     const [integers, setIntegers] = useState('')
     const [showResults, setShowResults] = useState(false)
+    const [incorrectResults, setincorrectResults] = useState(false)
     const [score, setScore] = useState(0)
 
     let addedIntegers = evaluate(integers[0] + integers[1])
@@ -29,6 +30,7 @@ function AddMath() {
         generateQuestion()
 
         setTimeout(() => { setShowResults(false) }, 1000)
+        setTimeout(() => { setincorrectResults(false) }, 1000)
     }, [score])
 
     function useAnswer() {
@@ -41,8 +43,7 @@ function AddMath() {
             setScore(score + 1)
         }
         else {
-            console.log('Try again!')
-            setShowResults(true)
+            setincorrectResults(true)
             setScore(score - 1)
         }
 
@@ -76,7 +77,7 @@ function AddMath() {
                         </div>
 
                     </div>
-                    {showResults && (
+                    {incorrectResults && (
                         <WrongAnswer></WrongAnswer>
                     )}
                 </>

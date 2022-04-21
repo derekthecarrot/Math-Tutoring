@@ -1,7 +1,8 @@
+import '../App.css'
 
 function CorrectAnswer () {
     return (
-        <h1>Good Job!</h1>
+        <h1 className='goodjob'>Good Job!</h1>
     )
 }
 

@@ -1,7 +1,8 @@
+import '../App.css'
 
 function WrongAnswer () {
     return (
-        <h1>Try Again!</h1>
+        <h1 className='tryagain'>Try Again!</h1>
     )
 }
 
