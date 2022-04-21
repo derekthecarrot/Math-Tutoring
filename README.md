@@ -5,6 +5,8 @@
 Hello - this is my application for math practice. The purpose is to assist grade schoolers in practicing their addition skills. It uses the React Framework in order to store questions, results, score, and conditional render the results. You can track a running score, and answer as many questions as you'd like to practice you're adding skills!
 
 
+![My Website](https://derekthecarrot.github.io/Math-Tutoring/public/images/screenshot.PNG)
+
 Table of Contents
 
 * [Installation](#installation)

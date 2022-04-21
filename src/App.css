@@ -39,6 +39,8 @@ html {
 .inputBox {
   border-radius: 1rem;
   margin: 1rem;
+  font-size: 1.5rem;
+  font-family: Roboto Slab;
 
 }
 
@@ -51,6 +53,8 @@ html {
 
 .submitAnswer {
   border-radius: 1rem;
+  font-family: Roboto Slab;
+  font-size: 1rem;
 }
 
 .scoreheader {
