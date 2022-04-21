@@ -9,28 +9,37 @@ function AddMath () {
     const [integers, setIntegers] = useState('')
 
     function generateQuestion() {
-    const integerA = Math.floor(Math.random() * 20);
-    const integerB = Math.floor(Math.random() * 20);
+    let integerA = Math.floor(Math.random() * 20);
+    let integerB = Math.floor(Math.random() * 20);
 
-    console.log(integerA)
-    console.log(integerB)
-    
+
+        console.log(integerA)
+        console.log(integerB)
+
         setIntegers([integerA, integerB]);
     }
 
     useEffect(() => generateQuestion()
     , [])
 
-    const useAnswer = () => {
-        const addedIntegers = evaluate(integers)
+    function useAnswer() {
+        let addedIntegers = evaluate(integers[0] + integers[1])
 
-        console.log(addedIntegers);
+            console.log(addedIntegers)
+            console.log(answer)
+        if (answer == addedIntegers) {
+            console.log('Nice work!')
+        }
+        else {
+            console.log('Try again!')
+        }
+
     }
 
     return (
         <React.Fragment>
-            <h1> </h1>
-            <input type="text" name="answer" onChange={ (event) => setAnswer(event.target.value)}/>
+            <h1>{integers[0]} + {integers[1]} </h1>
+            <input value={answer} onChange={ (e) => setAnswer(e.target.value)}/>
             <button onClick={useAnswer}>Submit</button>
             
         </React.Fragment>
