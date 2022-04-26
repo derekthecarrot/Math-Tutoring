@@ -74,7 +74,7 @@ function AddMath() {
                         <h1 className='questionNumbers'>{integers[0]} + {integers[1]} </h1>
                         <input className='inputBox' value={answer} onChange={(e) => setAnswer(e.target.value)} />
                         <div className='submitDiv'>
-                            <button className='submitAnswer' onClick={useAnswer}>Submit</button>
+                            <button className='submitAnswer' disabled={clicked} onClick={useAnswer}>Submit</button>
                         </div>
 
                     </div>
