@@ -1,6 +1,5 @@
-import React, { useEffect } from "react"
+import React, { useEffect, useState } from "react"
 import { evaluate } from 'mathjs'
-import { useState } from 'react'
 import CorrectAnswer from './results'
 import WrongAnswer from './wrongresults'
 
@@ -14,29 +13,25 @@ function AddMath() {
 
     let addedIntegers = evaluate(integers[0] + integers[1])
 
+
+
+    //Generates question based on random math - max number is 20 and then setting state of integer.
     function generateQuestion() {
         let integerA = Math.floor(Math.random() * 20);
         let integerB = Math.floor(Math.random() * 20);
 
-
-        console.log(integerA)
-        console.log(integerB)
-
         setIntegers([integerA, integerB]);
     }
-
+    //useEffect based on score, to update with a new question and reset conditional render back to false
     useEffect(() => {
         setTimeout(() => {generateQuestion()}, 1000)
 
         setTimeout(() => { setShowResults(false) }, 1000)
 
     }, [score])
-
+    //if else statement to check answer and then minus or plus a point from score, and then setting that info to a state
     function useAnswer() {
 
-
-        console.log(addedIntegers)
-        console.log(answer)
         if (answer == addedIntegers) {
             setShowResults(true)
             setScore(score + 1)
@@ -50,6 +45,7 @@ function AddMath() {
 
     return (
         <React.Fragment>
+
             <div><h1 className='scoreheader'>Score: {score}</h1></div>
             {answer == addedIntegers ? (
                 <>
