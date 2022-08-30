@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Math-Tutoring/static/css/main.6234f743.css",
+    "main.js": "/Math-Tutoring/static/js/main.87d9b5f0.js",
+    "index.html": "/Math-Tutoring/index.html",
+    "main.6234f743.css.map": "/Math-Tutoring/static/css/main.6234f743.css.map",
+    "main.87d9b5f0.js.map": "/Math-Tutoring/static/js/main.87d9b5f0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6234f743.css",
+    "static/js/main.87d9b5f0.js"
+  ]
+}
